@@ -1,0 +1,6 @@
+enum Role {
+    GENERAL
+    MANAGER
+    ADMIN
+    SUPER_ADMIN
+}

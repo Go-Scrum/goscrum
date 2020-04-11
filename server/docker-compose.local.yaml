@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql-ccs
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ccs
+      MYSQL_DATABASE: ccs
+      MYSQL_USER: ccs
+      MYSQL_PASSWORD: ccs
+    ports:
+      - ${DATABASE_PORT}:3306
+
+volumes:
+  db_data: {}

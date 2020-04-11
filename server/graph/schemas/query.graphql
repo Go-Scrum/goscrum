@@ -1,0 +1,15 @@
+type Query {
+  users(
+    limit: Int
+    offset: Int
+    search: String
+  ): UserConnection
+
+  user(id: String!): User
+
+  slackUsers(
+    limit: Int
+    offset: Int
+    search: String
+  ): SlackUserConnection
+}
