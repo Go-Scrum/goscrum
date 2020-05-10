@@ -1,0 +1,12 @@
+type SlackUserConnection {
+    totalCount: Int!
+    nodes: [SlackUser!]!
+}
+
+type SlackUser {
+    id: ID!
+    user_name: String!
+    first_name: String!
+    last_name: String!
+    email: String!
+}
