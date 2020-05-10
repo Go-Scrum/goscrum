@@ -12,4 +12,6 @@ type Query {
     offset: Int
     search: String
   ): SlackUserConnection
+
+  slackChannels: [SlackChannel]
 }

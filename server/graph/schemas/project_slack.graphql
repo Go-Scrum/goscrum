@@ -1,0 +1,4 @@
+type ProjectSlack {
+    channel_id: ID!
+    channel_name: String!
+}

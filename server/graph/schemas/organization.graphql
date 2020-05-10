@@ -1,4 +1,7 @@
 type Organization {
     id: ID!
     name: String!
+    users: [OrganizationUser!]!
+    projects: [Project!]!
+    slack: [Integration!]!
 }

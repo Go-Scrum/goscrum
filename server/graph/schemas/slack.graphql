@@ -1,0 +1,18 @@
+type Slack {
+    id: ID!
+    organization_id: Organization!
+
+    # TODO - this will be removed from here
+    access_token: String!
+    scope: String!
+    team_name: String!
+    team_id: String!
+    user_id: String!
+    bot: SlackBot!
+}
+
+# TODO - this will be removed from here
+type SlackBot {
+    id: ID!
+    access_token: String!
+}

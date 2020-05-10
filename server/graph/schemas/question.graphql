@@ -1,0 +1,15 @@
+enum QuestionType {
+    Text
+    Numeric
+    Radio # it will be combobox
+    Checkbox  # it will be like polls
+}
+
+type Question {
+    id: ID!
+    title: String!
+    Type: QuestionType!
+    color: String!
+    project_id: Project!
+    order: Int!
+}

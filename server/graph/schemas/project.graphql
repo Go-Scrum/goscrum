@@ -1,0 +1,32 @@
+type Project {
+    id: ID!
+    name: String!
+    owner: OrganizationUser!
+    organization: Organization!
+    is_active: Boolean!
+    onbording_message: String!
+#    timezone: String! TODO -- need to rethink
+    reporting_time: String! #  TODO -- need to rethink
+
+    questions: [Question!]!
+    slack: ProjectSlack!
+    slack_participants: [SlackUser!]!
+}
+
+type ProjectConnection {
+    totalCount: Int!
+    nodes: [Project!]!
+}
+
+input AddProjectToOrganization {
+    organization_id: String!
+    name:  String!
+#    TODO list of participants
+}
+
+input UpdateProject {
+    id: String!
+    organization_id: String!
+    name:  String!
+#    TODO list of participants
+}

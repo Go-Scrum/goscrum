@@ -1,0 +1,4 @@
+type SlackChannel {
+    id: ID!
+    name: String!
+}

@@ -1,0 +1,11 @@
+type OrganizationUser {
+    id: ID!
+    role: Role
+    user: User!
+    organization: Organization!
+}
+
+type OrganizationUserConnection {
+    totalCount: Int!
+    nodes: [OrganizationUser!]!
+}

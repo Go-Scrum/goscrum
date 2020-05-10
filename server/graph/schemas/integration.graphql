@@ -1,0 +1,14 @@
+type Integration {
+    id: ID!
+    provider: IntegrationType!
+    provider_type: ProviderType!
+}
+
+enum IntegrationType {
+    Slack
+}
+
+enum ProviderType {
+    Data
+    Communication
+}
