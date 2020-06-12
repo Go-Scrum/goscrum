@@ -20,7 +20,7 @@ deploy:
 	make build
 
 	cp serverless.default.yaml serverless.yml
-	sls deploy --stage $(STAGE) -v --region $(REGION)
+	npx serverless deploy --stage $(STAGE) -v --region $(REGION)
 
 	#TODO will do it later make migrate
 
