@@ -15,3 +15,5 @@
 # vendor/
 !/server/.serverless/
 !/server/handlers/main.go
+/server/.env
+/server/server

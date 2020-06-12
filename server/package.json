@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "serverless-offline": "^6.1.4"
+    "serverless-dotenv-plugin": "^2.3.2",
+    "serverless-offline": "^6.4.0"
   }
 }

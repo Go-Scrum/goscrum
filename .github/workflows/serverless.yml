@@ -1,13 +1,25 @@
-name: main
+name: master-serverless
 
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'server/**'
   pull_request:
     branches: [ master ]
+    paths:
+      - 'server/**'
+
+env:
+  STAGE: stage
+  REGION: ap-south-1
+  DATABASE_NAME: goscrum
+  DATABASE_HOSTNAME: goscrum
+  DATABASE_USERNAME: root
+  DATABASE_PASSWORD: admin
+  DATABASE_PORT: 3306
 
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -30,3 +42,5 @@ jobs:
     - name: Build
       run: cd server && make build
 
+    - name: Deploy
+      run: cd server && make deploy

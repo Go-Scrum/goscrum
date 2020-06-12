@@ -3,6 +3,7 @@ service: goscrum-server
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
   - serverless-offline
+  - serverless-dotenv-plugin
 
 package:
   exclude:

@@ -22,7 +22,7 @@ deploy:
 	cp serverless.default.yaml serverless.yml
 	sls deploy --stage $(STAGE) -v --region $(REGION)
 
-	make migrate
+	#TODO will do it later make migrate
 
 remove:
 	sls remove --stage $(STAGE) -v --region $(REGION)
