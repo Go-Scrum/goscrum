@@ -23,7 +23,7 @@ deploy:
 
 	npx serverless deploy --stage $(STAGE) -v --region $(REGION)
 
-	#  TODO will do it later make migrate
+	# TODO will do it later make migrate
 
 remove:
 	sls remove --stage $(STAGE) -v --region $(REGION)

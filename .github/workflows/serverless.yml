@@ -11,7 +11,7 @@ on:
       - 'server/**'
 
 env:
-  STAGE: stage
+  STAGE: stage1
   REGION: ap-south-1
   DATABASE_NAME: goscrum
   DATABASE_HOSTNAME: goscrum
