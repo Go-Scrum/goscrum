@@ -19,10 +19,11 @@ jobs:
         go-version: ^1.13
       id: go
 
-    - name: Build
-      run: cd server && make build
-    
     - name: Setup Node.js environment
       uses: actions/setup-node@v1.4.2
       with:
         node-version: 10.x
+
+    - name: Build
+      run: cd server && make build
+
