@@ -46,7 +46,14 @@ jobs:
         touch .env
 
     - name: Build
-      run: cd server && make build
+      run: |
+        cd server
+        make build
 
     - name: Deploy
-      run: cd server && make deploy
+      run: |
+        cd server
+        make deploy
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

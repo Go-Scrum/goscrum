@@ -17,3 +17,4 @@
 !/server/handlers/main.go
 /server/.env
 /server/server
+/server/.serverless/
