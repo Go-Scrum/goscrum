@@ -23,7 +23,6 @@ custom:
 provider:
   name: aws
   runtime: go1.x
-  profile: goscrum # TODO need to add ccs profile when credentials are ready
   stage: dev
   region: 'us-west-2'
   memorySize: 128 # optional, in MB, default is 1024
